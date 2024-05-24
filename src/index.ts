@@ -6,6 +6,7 @@
 // get slides: https://business-school.production.languages.akelius.com/media/api/v1/slideshows/45250/slides?page=0&size=50
 // get slide: https://business-school.production.languages.akelius.com/media/api/v1/slides/994925
 
+import cors from '@fastify/cors'
 import Fastify, { FastifyRequest } from 'fastify'
 import languages from './data/languages.json'
 import level0 from './data/level_0.json'
@@ -28,6 +29,7 @@ const HOST = `http://localhost:${PORT}`
 const fastify = Fastify({
   logger: LOGGER,
 })
+fastify.register(cors)
 
 const routesService = RoutesService.instance()
 fastify.addHook('onRoute', (route) => {
