@@ -1,10 +1,9 @@
 {
-  "id": 2,
-  "template": "MULTIPLE_CHOICE_TEXT",
-  "textOptions": [
-    { "id": 0, "expectedSelection": true, "text": "p" },
-    { "id": 1, "expectedSelection": false, "text": "a" }
-  ],
-  "audioUrl": "https://p-media-static-language.azureedge.net/audios/942490-yvwyjeumgh/file.mp3",
-  "requiresAnswer": true
+  "id": 1,
+  "template": "LETTER_PRESENTATION",
+  "text": "o",
+  "isAnimated": true,
+  "audioUrl": "https://cdn.akelius.education/audios/942488-xesarfuuuu/file.mp3",
+  "backgroundColor": "#ffffff",
+  "requiresAnswer": false
 }

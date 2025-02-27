@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "template": "MULTIPLE_CHOICE_TEXT",
+  "textOptions": [
+    { "id": 0, "expectedSelection": true, "text": "o" },
+    { "id": 1, "expectedSelection": false, "text": "p" },
+    { "id": 2, "expectedSelection": false, "text": "t" }
+  ],
+  "audioUrl": "https://cdn.akelius.education/audios/942488-xesarfuuuu/file.mp3",
+  "requiresAnswer": true
+}

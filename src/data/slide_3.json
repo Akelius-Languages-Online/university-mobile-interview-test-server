@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "template": "MULTIPLE_CHOICE_TEXT",
+  "textOptions": [
+    { "id": 0, "expectedSelection": true, "text": "p" },
+    { "id": 1, "expectedSelection": false, "text": "o" }
+  ],
+  "audioUrl": "https://cdn.akelius.education/audios/942490-yvwyjeumgh/file.mp3",
+  "requiresAnswer": true
+}
