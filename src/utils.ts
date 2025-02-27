@@ -37,10 +37,6 @@ export class RoutesService {
       newName = name.slice(0, -1)
     }
 
-    this.#routes.push({
-      name: newName,
-      method: Array.isArray(method) ? method.join(', ') : method,
-      url: host + url,
-    })
+    this.#routes.push({ name: newName, method: Array.isArray(method) ? method.join(', ') : method, url: host + url })
   }
 }

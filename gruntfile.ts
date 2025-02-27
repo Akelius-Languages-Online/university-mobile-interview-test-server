@@ -6,28 +6,11 @@ loadNpmTasks('grunt-contrib-copy')
 loadNpmTasks('grunt-eslint')
 
 initConfig({
-  copy: {
-    jsons: {
-      expand: true,
-      cwd: 'src',
-      src: '**/*.json',
-      dest: 'dist',
-    },
-  },
+  copy: { jsons: { expand: true, cwd: 'src', src: '**/*.json', dest: 'dist' } },
 
-  eslint: {
-    src: ['src/**/*.ts'],
-    options: {
-      failOnError: true,
-    },
-  },
+  eslint: { src: ['src/**/*.ts'], options: { failOnError: true } },
 
-  run: {
-    start: {
-      cmd: 'node artefacts/src/index.js',
-      args: [],
-    },
-  },
+  run: { start: { cmd: 'node artefacts/src/index.js', args: [] } },
 })
 
 registerTask('build', ['eslint', 'task:cleanup', 'task:tsc', 'task:start'])

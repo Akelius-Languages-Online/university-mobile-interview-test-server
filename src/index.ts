@@ -26,9 +26,7 @@ const LOGGER = false
 const PORT = 3000
 const HOST = `http://localhost:${PORT}`
 
-const fastify = Fastify({
-  logger: LOGGER,
-})
+const fastify = Fastify({ logger: LOGGER })
 fastify.register(cors)
 
 const routesService = RoutesService.instance()
@@ -44,6 +42,10 @@ fastify.addHook('onReady', (done) => {
 })
 
 // routes
+fastify.get('/', async function handler() {
+  return routesService.routes
+})
+
 fastify.get('/languages', async function handler() {
   return languages
 })
